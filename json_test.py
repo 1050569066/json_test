@@ -12,7 +12,7 @@ def get(name):
                   ask = input("No such name,add it?(y/n)")
                   if ask == "y":
                         pw = g.getpass("Input password:")
-                        if pw == "zyy441303087312":
+                        if pw == "xxx":
                               namelist.append(name)
                               with open("text.json","w") as r:
                                     json.dump(namelist,r,indent=4)
@@ -23,7 +23,7 @@ def get(name):
             ask = input("No such name,add it?(y/n)")
             if ask == "y":
                   pw = g.getpass("Input password:")
-                  if pw == "zyy441303087312":
+                  if pw == "xxx":
                         namelist = [name]
                         with open("text.json","w") as r:
                               json.dump(namelist,r,indent=4)
@@ -34,7 +34,7 @@ def get(name):
             
 def delx(name):
       del_pw = g.getpass("Input administrator password!")
-      if del_pw == "orangecatpkat324122":
+      if del_pw == "xxx":
             if name == "All":
                   r = open("text.json","w")
                   r.close()
